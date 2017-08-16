@@ -1,0 +1,53 @@
+h1
+{
+  animation: colorChange 0.1s ease-in-out infinite;
+  border: 5px solid red;
+}
+p
+{
+  animation: rotate 1s ease-in-out infinite;
+}
+body
+{
+  text-align: center;
+  background-color: powderblue;
+}
+
+@keyframes colorChange
+{
+  0% {color: red;}
+  17% {color: orange;}
+  33% {color: yellow;}
+  50% {color: green;}
+  67% {color: blue;}
+  72% {color: indigo;}
+  83% {color: violet;}
+  100% {color: red;}
+}
+
+#butts {
+  animation: rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate
+{
+  0% {transform: rotate(0deg);}
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+p:after
+{
+    content: " butt";
+}
+
+p:before
+{
+    content: "butt ";
+    color: brown;
+}
+table, th, td
+{
+    border: 1px solid black;
+}
